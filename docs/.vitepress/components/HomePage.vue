@@ -8,8 +8,8 @@ const { Layout } = DefaultTheme
 <template>
   <Layout>
     <template #home-features-after>
-      <div class="w-full content-container">
-        <div class="container mx-auto">
+      <div class="px-6 sm:px-12 lg:px-[64px]">
+        <div class="max-w-6xl mx-auto">
           <HomeIntro />
         </div>
       </div>
@@ -17,7 +17,7 @@ const { Layout } = DefaultTheme
   </Layout>
 </template>
 
-<style>
+<!-- <style>
 .container {
   max-width: 1152px;
 }
@@ -34,4 +34,4 @@ const { Layout } = DefaultTheme
     padding-inline: 64px;
   }
 }
-</style>
+</style> -->
