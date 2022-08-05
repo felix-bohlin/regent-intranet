@@ -1,0 +1,20 @@
+{
+  "name": "regent-vitepress",
+  "version": "1.0.0",
+  "description": "Regents intranät",
+  "author": "Felix Bohlin (felix.bohlin@regent.se)",
+  "devDependencies": {
+    "@unocss/preset-wind": "^0.45.4",
+    "@unocss/reset": "^0.45.4",
+    "prettier": "^2.7.1",
+    "unocss": "^0.45.4",
+    "vitepress": "^1.0.0-alpha.4",
+    "vue": "^3.2.37"
+  },
+  "scripts": {
+    "dev": "vitepress",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  }
+}
