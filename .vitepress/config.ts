@@ -25,7 +25,7 @@ export default defineConfig({
 
     editLink: {
       pattern:
-        'https://github.com/felix-bohlin/regent-intranet/tree/main/docs/:path',
+        'https://github.com/felix-bohlin/regent-intranet/tree/main/:path',
       text: 'Föreslå en förändring på denna sida'
     },
 
