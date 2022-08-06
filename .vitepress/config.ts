@@ -21,6 +21,8 @@ export default defineConfig({
   themeConfig: {
     logo: '/regent-logo.png',
 
+    outlineTitle: 'Innehåll',
+
     editLink: {
       pattern:
         'https://github.com/felix-bohlin/regent-intranet/tree/main/docs/:path',
@@ -31,13 +33,13 @@ export default defineConfig({
 
     localeLinks: {
       text: 'Svenska',
-      items: [{ text: 'English', link: '/' }]
+      items: [{ text: 'English', link: '/en/' }]
     },
 
-    // sidebar: {
-    //   '/guide/': sidebarGuide(),
-    //   '/config/': sidebarConfig()
-    // },
+    sidebar: {
+      '/customer/': sidebarCustomer()
+      // '/guide/': sidebarGuide(),
+    },
 
     footer: {
       message: 'Följ oss på sociala medier!',
@@ -56,23 +58,19 @@ function nav() {
   return [
     {
       text: 'Bolagsdokument',
-      link: '/bolagsdokument',
-      activeMatch: `^/(bolagsdokument|organisation|ledning|mål|uppgifter|grafisk|profil|kalender)/`
+      link: '/bolagsdokument/'
     },
     {
       text: 'Kund',
-      link: '/kund',
-      activeMatch: `^/(kund|marknad|sälj|mål|segmentering|erbjudande|klagomål|merförsäljning|bonus|bästa|befintliga|intervju|träning|nöjdhet)/`
+      link: '/customer/'
     },
     {
       text: 'Verksamhet',
-      link: '/verksamhet',
-      activeMatch: '/verksamhet/'
+      link: '/verksamhet/'
     },
     {
       text: 'Ekonomi',
-      link: '/ekonomi',
-      activeMatch: '/ekonomi/'
+      link: '/ekonomi/'
     },
     {
       text: 'Logga in',
@@ -81,75 +79,41 @@ function nav() {
   ]
 }
 
-function sidebarGuide() {
+function sidebarCustomer() {
   return [
     {
-      text: 'Introduction',
-      collapsible: true,
+      text: 'Marknad',
       items: [
-        { text: 'What is VitePress?', link: '/guide/what-is-vitepress' },
-        { text: 'Getting Started', link: '/guide/getting-started' },
-        { text: 'Configuration', link: '/guide/configuration' },
-        { text: 'Deploying', link: '/guide/deploying' }
+        { text: 'Intro', link: '/customer/market/' },
+        { text: 'Segmentering', link: '/customer/market/segmentation' }
       ]
     },
     {
-      text: 'Writing',
-      collapsible: true,
+      text: 'Försäljning',
       items: [
-        { text: 'Markdown', link: '/guide/markdown' },
-        { text: 'Asset Handling', link: '/guide/asset-handling' },
-        { text: 'Frontmatter', link: '/guide/frontmatter' },
-        { text: 'Using Vue in Markdown', link: '/guide/using-vue' },
-        { text: 'API Reference', link: '/guide/api' }
-      ]
-    },
-    {
-      text: 'Theme',
-      collapsible: true,
-      items: [
-        { text: 'Introduction', link: '/guide/theme-introduction' },
-        { text: 'Nav', link: '/guide/theme-nav' },
-        { text: 'Sidebar', link: '/guide/theme-sidebar' },
-        { text: 'Prev Next Link', link: '/guide/theme-prev-next-link' },
-        { text: 'Edit Link', link: '/guide/theme-edit-link' },
-        { text: 'Last Updated', link: '/guide/theme-last-updated' },
-        { text: 'Layout', link: '/guide/theme-layout' },
-        { text: 'Home Page', link: '/guide/theme-home-page' },
-        { text: 'Team Page', link: '/guide/theme-team-page' },
-        { text: 'Footer', link: '/guide/theme-footer' },
-        { text: 'Search', link: '/guide/theme-search' },
-        { text: 'Carbon Ads', link: '/guide/theme-carbon-ads' }
-      ]
-    },
-    {
-      text: 'Migrations',
-      collapsible: true,
-      items: [
+        { text: 'Intro', link: '/customer/sales/' },
+        { text: 'Erbjudande', link: '/customer/sales/offer' },
+        { text: 'Säljprocessen', link: '/customer/sales/sales-process' },
         {
-          text: 'Migration from VuePress',
-          link: '/guide/migration-from-vuepress'
+          text: 'Klagomål från kunder',
+          link: '/customer/sales/complaints-from-customers'
         },
         {
-          text: 'Migration from VitePress 0.x',
-          link: '/guide/migration-from-vitepress-0'
-        }
-      ]
-    }
-  ]
-}
-
-function sidebarConfig() {
-  return [
-    {
-      text: 'Config',
-      items: [
-        { text: 'Introduction', link: '/config/introduction' },
-        { text: 'App Configs', link: '/config/app-configs' },
-        { text: 'Theme Configs', link: '/config/theme-configs' },
+          text: 'Bonus merförsäljning',
+          link: '/customer/sales/bonus-additional-sales'
+        },
+        { text: 'Bästa kunden', link: '/customer/sales/best-customer' },
         {
-          text: 'Frontmatter Configs',
-          link: '/config/frontmatter-configs'
+          text: 'Befintliga kunder',
+          link: '/customer/sales/existing-customers'
+        },
+        {
+          text: 'Konstultintervjuträning',
+          link: '/customer/sales/consultant-interview-training'
+        },
+        {
+          text: 'Kundnöjdhet',
+          link: '/customer/sales/customer-satisfaction'
         }
       ]
     }

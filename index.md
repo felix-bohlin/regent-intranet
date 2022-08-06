@@ -12,15 +12,9 @@ hero:
     alt: Regent logotyp
   actions:
     - theme: brand
-      text: Get Started
-      link: /guide/
+      text: Logga in
+      link: /login
     - theme: alt
-      text: Features
-      link: /guide/features
-    - theme: alt
-      text: Why Vitest?
-      link: /guide/why
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/vitest-dev/vitest
+      text: GitHub-repo
+      link: https://github.com/felix-bohlin/regent-intranet
 ---

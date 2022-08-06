@@ -1,0 +1,3 @@
+# Försäljning
+
+Regent är en IT-leverantör av Nyckelfärdiga Digitala Lösningar®. Oavsett om den digitala lösning kunden efterfrågar är på webben, i mobilen eller rentav i form av en BI-lösning har Regent de kompetenser som krävs för att realisera den digitala lösningen. Drift hanteras i molnet och förvaltning av befintliga system sköts av Regents proaktiva förvaltningsorganisation. Att leverera detta helhetsengagemang inom digitala lösningar ligger i linje med Regents vision _IT som det borde vara_. Det Regents kunder ska uppleva genom att anlita Regent är bekymmersfrihet. Fokus under leveransen ligger i första hand på kvalitet följt av time to market.

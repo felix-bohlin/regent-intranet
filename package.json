@@ -4,11 +4,7 @@
   "description": "Regents intranät",
   "author": "Felix Bohlin (felix.bohlin@regent.se)",
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.4",
-    "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.14",
     "prettier": "^2.7.1",
-    "tailwindcss": "^3.1.8",
     "vitepress": "^1.0.0-alpha.4",
     "vue": "^3.2.37"
   },

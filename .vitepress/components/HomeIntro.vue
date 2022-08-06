@@ -52,14 +52,14 @@
       som avgör hur Regent uppfattas. Hit hör områden som
       varumärkespersonlighet, definition av Regents bästa kund och löpande
       marknadsarbete. Läs mer om detta under
-      <a href="/marknad/">Marknad</a>.</span
+      <a href="/customer/market/segmentation">Marknad</a>.</span
     >
   </p>
   <h2><span style="line-height: 1.5">Erbjudande</span></h2>
   <p>
     <span style="line-height: 1.5"
       >Varje affärsområde kan ha olika erbjudanden. Läs med under
-      <a href="/erbjudande/">Erbjudande</a>.</span
+      <a href="/customer/sales/offer">Erbjudande</a>.</span
     >
   </p>
   <h2>Försäljning</h2>
@@ -94,7 +94,7 @@
     <a href="/resultat/">här</a>.
   </p>
   <h2>Länkar</h2>
-  <ul class="md:columns-2">
+  <ul class="link-list">
     <li>
       <a
         href="http://regent.atlassian.net"
@@ -193,3 +193,11 @@
     </li>
   </ul>
 </template>
+
+<style>
+@media (min-width: 640px) {
+  .link-list {
+    columns: 2;
+  }
+}
+</style>

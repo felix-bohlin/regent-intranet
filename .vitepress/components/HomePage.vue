@@ -8,11 +8,9 @@ const { Layout } = DefaultTheme
 <template>
   <Layout>
     <template #home-features-after>
-      <div class="px-6 sm:px-12 lg:px-[64px]">
-        <div class="max-w-6xl mx-auto">
-          <div
-            class="mr-auto p-0 prose dark:prose-invert prose-a:text-blue prose-a:font-bold"
-          >
+      <div class="outer">
+        <div class="inner">
+          <div class="content vp-doc">
             <HomeIntro />
           </div>
         </div>
@@ -20,3 +18,30 @@ const { Layout } = DefaultTheme
     </template>
   </Layout>
 </template>
+
+<style scoped>
+.outer {
+  padding-inline: 24px;
+}
+
+.inner {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 0 auto 0 0;
+  max-width: 660px;
+}
+
+@media (min-width: 640px) {
+  .outer {
+    padding-inline: 48px;
+  }
+}
+@media (min-width: 960px) {
+  .outer {
+    padding-inline: 64px;
+  }
+}
+</style>
