@@ -8,11 +8,24 @@ export default defineConfig({
     'Välkommen till Regents intranät. Här finner du information om Regents interna processer och mer om hur Regent är som företag. Intranätet fungerar även som vår personalhandbok.',
   head: [
     ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/png' }]
+    ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/png' }],
+    [
+      'link',
+      {
+        href: 'https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap',
+        rel: 'stylesheet'
+      }
+    ]
   ],
 
   themeConfig: {
     logo: '/regent-logo.png',
+
+    editLink: {
+      pattern:
+        'https://github.com/felix-bohlin/regent-intranet/tree/main/docs/:path',
+      text: 'Föreslå en förändring på denna sida'
+    },
 
     nav: nav(),
 
@@ -29,13 +42,13 @@ export default defineConfig({
     footer: {
       message: 'Följ oss på sociala medier!',
       copyright: '© 2022 | All rights reserved.'
-    }
+    },
 
-    // algolia: {
-    //   appId: '8J64VVRP8K',
-    //   apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
-    //   indexName: 'vitepress'
-    // },
+    algolia: {
+      appId: 'IQUSNK3XKO',
+      apiKey: '1a6249eae25d45e829b8a8c84de26a75',
+      indexName: 'intranet_regent'
+    }
   }
 })
 

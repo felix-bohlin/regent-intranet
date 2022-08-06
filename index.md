@@ -9,7 +9,7 @@ hero:
   tagline: Här finner du information om Regents interna processer och mer om hur Regent är som företag. Intranätet fungerar även som vår personalhandbok.
   image:
     src: /regent-logo.png
-    alt: Vitest
+    alt: Regent logotyp
   actions:
     - theme: brand
       text: Get Started
