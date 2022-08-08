@@ -1,9 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  font-family: 'PT Sans';
+}
 
-@layer base {
-  * {
-    font-family: 'PT Sans';
-  }
+:not(.dark) .VPImage.logo svg path:last-child {
+  fill: #fff;
 }

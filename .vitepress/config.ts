@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'sv-SE',
-  title: '| intranät',
+  title: 'Regent',
   titleTemplate: 'Regent',
   description:
     'Välkommen till Regents intranät. Här finner du information om Regents interna processer och mer om hur Regent är som företag. Intranätet fungerar även som vår personalhandbok.',
@@ -19,7 +19,17 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: '/regent-logo.png',
+    logo: '/r-logo.svg',
+
+    socialLinks: [
+      { icon: 'facebook', link: 'https://www.facebook.com/RegentAB' },
+      { icon: 'instagram', link: 'https://www.instagram.com/regentab/' },
+      {
+        icon: 'linkedin',
+        link: 'https://www.linkedin.com/company/regent-ab'
+      },
+      { icon: 'twitter', link: 'https://twitter.com/regentab' }
+    ],
 
     outlineTitle: 'Innehåll',
 
@@ -67,10 +77,6 @@ function nav() {
     {
       text: 'Verksamhet',
       link: '/verksamhet/'
-    },
-    {
-      text: 'Ekonomi',
-      link: '/ekonomi/'
     },
     {
       text: 'Logga in',
