@@ -4,6 +4,12 @@
 
 **NEVER** use real world logged in data as long as this repo isn't a Regent repo.
 
+## Good to know
+
+- Built with [Vitepress](https://vitepress.vuejs.org/).
+- No direct commits to main branch, only PR's
+- Use semantic commit messages (see below)
+
 ## Semantic commit messages
 
 - `feat`: (new feature for the user, not a new feature for build script)
