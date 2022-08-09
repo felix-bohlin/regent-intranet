@@ -20,6 +20,13 @@
 - `test`: (adding missing tests, refactoring tests; no production code change)
 - `chore`: (updating grunt tasks etc; no production code change)
 
+Example commit messages:
+
+- `docs: add example to readme`
+- `chore: add npm script`
+- `feat: add hero style`
+- `fix: hero responsive bug fix`
+
 ## TODO
 
 1. move repo to some kind of Regent account/server
