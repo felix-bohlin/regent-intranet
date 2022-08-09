@@ -32,5 +32,5 @@ Example commit messages:
 1. move repo to some kind of Regent account/server
 2. sort out strategy for localization - two domains? One domain?
 3. CMS or no CMS?
-4. Login - what to do?
+4. Microsoft authentication - what to do?
 5. Configure search
